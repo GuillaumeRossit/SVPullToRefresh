@@ -145,7 +145,7 @@ UIEdgeInsets scrollViewOriginalContentInsets;
     if(self = [super initWithFrame:frame]) {
         
         // default styling values
-        self.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+        self.activityIndicatorViewStyle = UIActivityIndicatorViewStyleMedium;
         //self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         if (self.direction == SVInfiniteScrollingDirectionVertical)
             self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
@@ -255,7 +255,7 @@ UIEdgeInsets scrollViewOriginalContentInsets;
 
 - (UIActivityIndicatorView *)activityIndicatorView {
     if(!_activityIndicatorView) {
-        _activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+        _activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleMedium];
         _activityIndicatorView.hidesWhenStopped = YES;
         [self addSubview:_activityIndicatorView];
     }
